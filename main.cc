@@ -2,9 +2,14 @@
 
 using namespace std;
 
-int main(void) {
+int main(int argc, char** argv) {
   cout << "Hello World" << endl;
-  return;
+
+  if (argc==1) {
+    return 0;
+  } else {
+    return -1;
+  }
 }
 
 
