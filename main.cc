@@ -3,11 +3,13 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-  cout << "Hello World" << endl;
+  cout << "Hello World or DIE" << endl;
 
   if (argc==1) {
+    cout << "HW" << endl;
     return 0;
   } else {
+    cout << "DIE" << endl;    
     return -1;
   }
 }
