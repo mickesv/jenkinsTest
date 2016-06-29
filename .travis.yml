@@ -1,5 +1,9 @@
 install: true
+env:
+  - CTEST_MODEL=Nightly
+
 script:
  - cmake .
  - make
- - ctest -no-compress-output -T Test
+# - ctest -no-compress-output -T Test
+ - ctest -VV
