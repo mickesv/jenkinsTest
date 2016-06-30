@@ -1,0 +1,5 @@
+script:
+ - cmake .
+ - make
+# - ctest -no-compress-output -T Test
+ - ctest -VV
