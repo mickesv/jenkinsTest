@@ -4,5 +4,5 @@ build:
     - apt-get update
     - apt-get install -y build-essential cppcheck cmake
     - cmake .
-    - make
-    - ctest -VV
+    - cmake --build .
+    - ctest
