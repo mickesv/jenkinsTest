@@ -1,5 +1,6 @@
-script:
- - cmake .
- - make
-# - ctest -no-compress-output -T Test
- - ctest -VV
+build:
+  image: ubuntu:latest
+  commands:
+    - cmake .
+    - make
+    - ctest -VV
