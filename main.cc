@@ -6,7 +6,7 @@ int main(int argc, char** argv) {
   cout << "Hello World or DIE" << endl;
 
   if (argc==1) {
-    cout << "HW  " << endl;
+    cout << "HW " << endl;
     return 0;
   } else {
     cout << "DIE" << endl;    
