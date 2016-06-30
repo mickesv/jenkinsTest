@@ -1,8 +1,8 @@
 build:
   image: ubuntu:latest
   commands:
-    - apt-get update -q
-    - apt-get install -qy build-essential cppcheck cmake
+    - apt-get -q update
+    - apt-get -qy install build-essential cppcheck cmake
     - cmake .
     - cmake --build .
     - ctest
