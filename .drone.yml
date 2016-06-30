@@ -2,7 +2,7 @@ build:
   image: ubuntu:latest
   commands:
     - apt-get -qq update
-    - apt-get -qqqy install build-essential cppcheck cmake
+    - apt-get -qy install build-essential cppcheck cmake > apt-get.log
     - cmake .
     - cmake --build .
     - ctest
