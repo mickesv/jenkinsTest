@@ -1,6 +1,7 @@
 build:
   image: ubuntu:latest
   commands:
+    - apt-get update
     - apt-get install -y build-essential cppcheck cmake
     - cmake .
     - make
