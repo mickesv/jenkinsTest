@@ -5,6 +5,6 @@ build:
     - apt-get -qy install build-essential cppcheck cmake emacs > apt-get.log
     - cmake .
     - cmake --build .
-    - ctest
     - emacs -nw --batch --eval=(princ "hello world\n")
+    - ctest
  
