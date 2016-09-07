@@ -2,9 +2,6 @@ build:
   image: ubuntu:latest
   commands:
     - apt-get -qq update
-    - apt-get -qy install build-essential cppcheck cmake emacs > apt-get.log
-    - cmake .
-    - cmake --build .
-    - emacs -nw --batch --eval=(princ "hello world\n")
-    - ctest
+    - apt-get -qy install emacs > apt-get.log
+    - emacs -nw --batch -l emacsbuild.el
  
