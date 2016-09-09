@@ -1,6 +1,7 @@
 build:
   image: ubuntu:latest
   commands:
+    - apt-get -qq update
     - apt-get -qy install python-software-properties
     - add-apt-repository -y ppa:ubuntu-elisp
     - apt-get -qq update
