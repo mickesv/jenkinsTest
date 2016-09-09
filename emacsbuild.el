@@ -3,11 +3,11 @@
 (prefer-coding-system 'utf-8)
 
 ;; Working directories
-(setq dir-base "/root/")
-(message (concat "Base Dir is" dir-base))
+(setq dir-base (getenv "DRONE_DIR"))
+(message (concat "Base Dir is " dir-base))
 
-(setq dir-source (concat dir-base "Sprints")
-      dir-pub (concat dir-base "Sprints"))
+(setq dir-source (concat dir-base "/Sprints")
+      dir-pub (concat dir-base "/Publish"))
 
 ;; Set up package install
 (require 'package)
