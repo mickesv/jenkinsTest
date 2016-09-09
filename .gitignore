@@ -39,3 +39,4 @@ CTestTestfile.cmake
 Testing
 /tst1
 .vagrant
+/secrets.yml
