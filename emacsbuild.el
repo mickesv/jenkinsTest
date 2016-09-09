@@ -3,7 +3,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Working directories
-(setq dir-base "/vagrant/")
+(setq dir-base "/root/")
 (message (concat "Base Dir is" dir-base))
 
 (setq dir-source (concat dir-base "Sprints")
