@@ -1,15 +1,11 @@
 build:
   image: msv/emacs
   commands:
-    - apt-get -qq update
-    - apt-get -qy install software-properties-common
-    - add-apt-repository -y ppa:ubuntu-elisp
-    - apt-get -qq update
-    - apt-get -qy install emacs-snapshot
     - emacs -nw --batch -l emacsbuild.el
  
 publish:
   github_release:
+    api_key: $$GITHUB_TOKEN
     files:
       - Publish/*
     checksum: sha1
