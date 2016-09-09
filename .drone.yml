@@ -2,7 +2,7 @@ build:
   image: ubuntu:latest
   commands:
     - apt-get -qq update
-    - apt-get -qy install python-software-properties
+    - apt-get -qy install software-properties-common
     - add-apt-repository -y ppa:ubuntu-elisp
     - apt-get -qq update
     - apt-get -qy install emacs-snapshot
@@ -10,7 +10,6 @@ build:
  
 publish:
   github_release:
-    api-key: 7c1895aca13c87ef3a09c4f92e05753819daee73
     files:
       - Publish/*
     checksum: sha1
