@@ -1,7 +1,16 @@
 build:
   image: ubuntu:latest
   commands:
+    - apt-get -qy install python-software-properties
+    - add-apt-repository -y ppa:ubuntu-elisp
     - apt-get -qq update
-    - apt-get -qy install emacs > apt-get.log
+    - apt-get -qy install emacs-snapshot
     - emacs -nw --batch -l emacsbuild.el
  
+publish:
+  github_release:
+    api-key: 7c1895aca13c87ef3a09c4f92e05753819daee73
+    files:
+      - Publish/*
+    checksum: sha1
+    

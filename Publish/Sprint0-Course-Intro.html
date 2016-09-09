@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Sprint 0: Course Introduction</title>
+<!-- 2016-09-09 Fri 11:30 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Mikael Svahnberg" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="org/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Sprint 0: Course Introduction</h1>
+<br/>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> About This Sprint</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This sprint introduces the course and the course structure.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> User Stories covered in this Sprint</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>As a student I want to pass this course.
+</li>
+<li>As a student I want to understand how this course is structured so that I can quickly find the information I need to learn the subject.
+</li>
+<li>As a student I want to know why this topic is important so that I can be properly motivated.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Introduction</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Welcome to the course!
+</p>
+
+<p>
+Of course you want to pass the course, and we want you to too. This document is intended to give an overview of how the course is structured, and give you a &ldquo;map&rdquo; of sorts to the rest of the course material. It is my hope that this will help you find the material you want easily so that you can focus on learning each part of the course.
+</p>
+
+<p>
+The course is divided into a series of <i>Sprints</i>, that is, short iterations that focus on a small number of issues per sprint. We have borrowed this term from the agile development methodology <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Scrum</a>.
+</p>
+
+<p>
+Speaking of agile, there are a few other things we have borrowed from there as well. The <i>User Stories</i> that each sprint document starts with is one such thing. A user story is a sort of stylised requirement, and we use them to set you into the right frame of mind for each sprint. As you notice, the user story contains information about which <i>perspective</i> you should have, the <i>goals</i> you should achieve, and a brief explanation of <i>why</i> this goal is important.
+</p>
+
+<p>
+Related to this is the <i>Sprint Acceptance Tests</i> that you find at the bottom of each sprint document. These acceptance tests tell you how we plan on ensuring that the goal of the sprint has been reached.
+</p>
+
+<p>
+The bulk of the sprint consists of <i>Learning Material</i>, and <i>Experiential Learning</i>. Learning material are book chapters, videos, blog posts, etc. that you can use to learn more about the topic in the sprint. Experiential Learning (which is not a good name, but we can&rsquo;t think of any better) consists of different activities you should <i>do</i> as part of the sprint. Some of these activities are just practice activities. Others are activities that will help you organise the material better. Others again are those activities that we (as teachers) would like to look at to assess your progress. Let me repeat this:
+</p>
+
+<div class="note">
+<p>
+Experiential Learning are things you are supposed to <i>do</i>, and includes:
+</p>
+<ul class="org-ul">
+<li>Things you do for practice
+</li>
+<li>Things you do to organise the material
+</li>
+<li>Things you submit as assignments to the teachers for marking
+</li>
+</ul>
+
+</div>
+
+<p>
+Some activities are started during this sprint, and then we ask you to revisit them during every subsequent sprint. The idea with these activities are to help you structure your learning, and give you a means to follow your own progress.
+</p>
+
+<p>
+So, without further ado, let&rsquo;s get started with the learning material. <i>Good Luck!</i>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Learning Material</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Course Structure</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+The online presence of this course consists of these pages, and is organised as a set of sprints, where each sprint focus on a small topic and a few user stories. In each sprint there are things to read and watch, as well as activities to do. The result of some of those activities will be submitted as assignments for marking.
+</p>
+
+<p>
+We are available online twice per week via Adobe Connect. We welcome communication via e-mail, It&rsquo;s Learning, and phone.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> A Note on the Three-Week Roll Call</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+We are mandated to have a roll call in all our courses three weeks after the course starts, because of how the government pays us based on student registrations and student completions of a course. This roll call is a simple show of hands to count how many are actually active in the course. If you do not participate in the roll call, you are considered inactive, and will be deregistered from the course.
+</p>
+
+<p>
+For this course we use the &ldquo;<a href="#sec-5-2">Post on Discussion Board</a>&rdquo; experiential learning (below) as input to the three week roll call. <i>It is therefore vital that you post the introduction about yourself on the course discussion board within the first three weeks of the course!</i>. 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Assignment Submission</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Read and understand the following
+</p>
+</div>
+<div id="outline-container-sec-4-3-1" class="outline-4">
+<h4 id="sec-4-3-1"><span class="section-number-4">4.3.1</span> Assignment Submission and Dates</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>The course is offered during two study periods (1 semester)
+</li>
+<li>During this time, you are expected complete all assignments and submit them for marking.
+</li>
+<li>Based on the marking, you <b>may</b> need to complement your submissions with additional material.
+</li>
+<li>Complementing assignments can be done during the semester, within four weeks of the end of the semester, or in August.
+</li>
+<li>Complementing assignments after the semester is only allowed if your original submissions were made during the semester and were non-trivial.
+</li>
+<li>An assignment may only be complemented twice.
+</li>
+<li>Given these constraints, you are free to plan your submissions as you see fit.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-3-2" class="outline-4">
+<h4 id="sec-4-3-2"><span class="section-number-4">4.3.2</span> Submissions</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<p>
+Assignment submissions are done via e-mail as a written report or a well-annotated set of presentation slides, unless otherwhise stated.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3-3" class="outline-4">
+<h4 id="sec-4-3-3"><span class="section-number-4">4.3.3</span> Resubmissions</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<p>
+In a resubmission, please:
+</p>
+
+<ul class="org-ul">
+<li>highlight changes you have made!
+</li>
+<li>discuss, where applicable, the changes you make
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-3-4" class="outline-4">
+<h4 id="sec-4-3-4"><span class="section-number-4">4.3.4</span> A Note On Confidentiality</h4>
+<div class="outline-text-4" id="text-4-3-4">
+<p>
+You will submit your assignments to the course managers, and we will review them in order to give you feedback and to examine you on the course. You may also form study teams to review each other’s work. Apart from this, no-one else will see your assignments unless you decide to show them.
+</p>
+
+<p>
+There are ways to make sensitive information less sensitive. Some generic advice is to:
+</p>
+<ul class="org-ul">
+<li>Describe the types of stakeholders involved rather than the specific roles.
+</li>
+<li>Report numbers as percent of a total instead of the absolute numbers (for example, a process step may take x days or y% of the entire process), or express time in some generic &ldquo;time unit&rdquo; measure.
+</li>
+<li>If the motivations for your choices are sensitive, then keep them in a separate document that you can share with the course managers, and share a less sensitive version with your study team.
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> A Note on Reading Research Articles</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+This course may suggest research articles for you to read. This may seem a daunting task for you, but there are some general guidelines that may help you:
+</p>
+
+<ul class="org-ul">
+<li>Start by reading the abstract and the conclusions. These will tell you what problem or area the article is addressing, and what the article contributed to solving the problem.
+</li>
+<li>The articles in this course have &#x2013; to a large extent &#x2013; been chosen because they summarise the topics in various ways. To find these summaries, look for <i>lists, figures, and tables</i> in the article. Read these. Read the text around them, or where the figures and tables were referenced, in order to get an explanation of how to interpret them.
+</li>
+</ul>
+
+<p>
+Generally, interpret each section of an article as follows:
+</p>
+<ul class="org-ul">
+<li>The <i>introduction</i> section in an article puts the problem into context, and might give you clues as to how other researchers have solved it before. You can use this section to get a generic overview.
+</li>
+<li>The <i>related work</i> section should discuss in further detail what other researchers have done that is similar to, or relates to, the article you are reading. This may give you an idea of how others have addressed the problem, and may give you pointers to other articles that you would wish to read.
+</li>
+<li>The <i>methodology</i> section explains <i>how</i> the study was conducted. Once an article is published (which they naturally are in this course), this is mostly interesting if you distrust some of the results and want to see if anything has been missed when constructing the study.
+</li>
+<li>The <i>execution</i> and <i>results</i> sections describe how the study was executed (in particular discrepancies from the planned methodology), and what the raw results were. Most of the time, you can safely skip these sections.
+</li>
+<li>The <i>analysis</i> section &ldquo;bakes&rdquo; the results and tries to answer the research questions (address the identified problem). This is probably the most interesting section for you to read.
+</li>
+<li>The <i>discussion</i> section should raise the view and try to see what the results actually mean in a bigger context. What can you do with the results? &ldquo;So what?&rdquo;. This is a tricky section to read, since the authors want you to believe that their results are the best thing invented since hot porridge, but at the same time they have to identify threats to the validity of the study. <i>Validity threats</i> are things that could have influenced the results instead of the sought after effect. This may be things that happened at the same time, inadequacies in the researchers skills and abilities, or inadequacies in the research design. Please remember, when (or if) reading this section, that most of the identified validity threats are minor obstacles (or the article would not have been published) that may impact the <i>scientific</i> view of the results more than the practical significance or usefulness of them.
+</li>
+<li>The <i>references</i> may give you ideas for other articles that you would like to read.
+</li>
+</ul>
+
+<p>
+The bottom line is that when being told to read a lot of research articles, the trick is to learn how to <i>not</i> read them while still getting the gist of them. Hopefully, the &ldquo;map&rdquo; described above may provide some help in identifying the parts of an article that are important for you.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> A Further Note on the Recommended Study Pace</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+Each sprint in this course is estimated to take roughly 20 hours (this amounts to 2 weeks at 1/4 of full time study pace). You may plan this as you see fit, but ultimately you need to spend an average of 10 hours each week to be able to complete the course within the planned semester.
+</p>
+
+<p>
+We know that once the initial rush has settled after a couple of weeks it is tempting to put the course on the back burner and get on with your life, your family, and your work. <i>Please don&rsquo;t!</i> It is <i>much</i> harder to come back to the course later, and the required effort does not get smaller over time &#x2013; it merely piles up.
+</p>
+
+<p>
+Instead, we recommend that you schedule time every week to work on the course.
+</p>
+
+<p>
+Some other advice:
+</p>
+<ul class="org-ul">
+<li>Try to set aside larger continuous blocks of time since it is easier to become engrossed thusly (cf. &ldquo;Ställtid&rdquo;, that Bodil Jönsson <a href="http://www.adlibris.com/se/bok/tio-tankar-om-tid-9789176088944">writes about</a>).
+</li>
+<li>If you are able to commute to work by bus or train, this is an excellent time to read the research articles &#x2013; maybe you can temporarily switch to bus or train?
+</li>
+<li>Talk to your boss. Discuss the assignments with them. Can you tweak the assignments so they become more useful for your company, and can you then get a few hours per week to work on them during office hours?
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> What should we do with the Sprint Test Plan?</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+The Sprint Test Plan is a way to get an overview of your expectations in the course, in relation to the provided material, and align it with my expectations as course responsible and examiner. In some sense, it is also your strategy for learning the topics. We will not mark your Sprint Test Plan &#x2013; you are creating and maintaining this for your own sake.
+</p>
+
+<p>
+The Sprint Test Plan will be revisited during every sprint, so that you have an updated record of what you need to learn to pass the course.
+</p>
+
+<p>
+We are loosely basing my suggestion for the Sprint Test Plan document on the IEEE 829-2008 standard. Feel free to add other information to it if you think it is relevant.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-7" class="outline-3">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> What is this &ldquo;Course Backlog&rdquo; thing?</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+As you study, we expect that you will get more questions, or additional information sources (blog pages etc.) that you would like to read, and we hope you will also get ideas for places where you would like to test what you have learnt. Put these into a course backlog document (it will help if you put them in a roughly prioritised order), and then spend time during each sprint to resolve your backlog items.
+</p>
+
+<p>
+At the end of the course, it is our hope that your backlog contains pointers to yourself with how you should go forward with the knowledge gained. For example, are there any particularly interesting things you have found that you would like to study more? Are there any courses you are interested in taking as a consequence of taking this course? Are there any practices that you would like to introduce into your organisation? How?
+</p>
+
+<p>
+Order the items in your Agile/Lean backlog according to your needs and priorities. 
+</p>
+
+<p>
+The course backlog is revisited in every sprint. we will not mark it; you create it for your own benefit.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Experiential Learning</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Log in to It&rsquo;s Learning</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Log in to the university&rsquo;s course management system, <a href="https://bth.itslearning.com">It&rsquo;s Learning</a>, and make sure you can access the course.
+</p>
+
+<p>
+Click on your name in the top right corner and select &ldquo;Your settings&rdquo;: <img src="./images/IItsProfile.png" alt="IItsProfile.png" />
+</p>
+
+<p>
+Configure the alerts and the message settings so that you get e-mails whenever we publish anything new info about the course.
+</p>
+
+
+<div class="figure">
+<p><img src="./images/IItsMessageSettings.png" alt="IItsMessageSettings.png" />
+</p>
+</div>
+
+
+<p>
+<b>Please Note:</b> You need to go in to <i>Message Settings</i> and make sure that the e-mail address is properly configured, <i>and</i> go in to <i>Alerts</i> to activate your notifications. Under <i>Alerts</i> you need to <i>Activate</i> e-mail notifications <i>and</i> select which of &ldquo;new assignments, news (main dashboard), and your subscriptons (main dashboard)" you want alerts about. Initially, we recommend that you check all of them. If you get too much information, you can always go back and uncheck items later.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Post on Discussion Board</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Join the Course Discussion Board (on It&rsquo;s Learning) and post a short introductory paragraph about yourself. This provides info to your fellow students, and also verifies that you have joined the discussion group and can post to it.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Buy Course Books</h3>
+<div class="outline-text-3" id="text-5-3">
+</div><div id="outline-container-sec-5-3-1" class="outline-4">
+<h4 id="sec-5-3-1"><span class="section-number-4">5.3.1</span> Official Course Books</h4>
+<div class="outline-text-4" id="text-5-3-1">
+
+<div class="figure">
+<p><img src="./images/IRosenberg.jpg" alt="IRosenberg.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+J. Rosenberg, A. Mateos, <i>The Cloud at your Service</i>, Manning, 2010. ISBN-10: 1935182528 | ISBN-13: 978-1935182528
+</p>
+
+<p>
+A fairly ok all-purpose book. A bit management-heavy, but it is surprisingly difficult to find books about cloud computing that focus on the technical construction of a cloud application. Chapters 4 and onwards become more technical.
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IReese.jpg" alt="IReese.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+G. Reese <i>Cloud Application Architectures</i>, O’Reilly, 2009. ISBN-10: 0596156367 | ISBN-13: 978-0596156367
+</p>
+
+<p>
+On a higher level; it does not go into detail in the same way about how you would design your software architecture, but does go through some of the technical challenges with a cloud solution. Also has some nice writeups of the motions you need to go through in order to get a virtual machine up and running on different cloud providers.
+</p>
+<br/><br/>
+</div>
+</div>
+
+<div id="outline-container-sec-5-3-2" class="outline-4">
+<h4 id="sec-5-3-2"><span class="section-number-4">5.3.2</span> Additional Books</h4>
+<div class="outline-text-4" id="text-5-3-2">
+
+<div class="figure">
+<p><img src="./images/IWilder.jpg" alt="IWilder.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+B. Wilder, <i>Cloud Architecture Patterns</i>, O&rsquo;Reilly, 2012. ISBN-10: 1449319777 | ISBN-13: 978-1449319779
+</p>
+
+<p>
+Contains a number of design and architecture patterns that addresses different challenges in cloud applications. Has a running example using <a href="http://azure.microsoft.com/">Microsoft Azure</a>.
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IFowler.jpg" alt="IFowler.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+M. Fowler, <i>Patterns of Enterprise Application Architecture</i>, Addison-Wesley, 2002. ISBN-10: 0321127420 | ISBN-13: 978-0321127426
+</p>
+
+<p>
+A large collection of design patterns specifically designed for the type of large scale applications that you would expect in a cloud environment.
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IHofmeister.jpg" alt="IHofmeister.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+C. Hofmeister et al., <i>Applied Software Architecture</i>, Addison-Wesley, 1999. ISBN-10: 0201325713 | ISBN-13: 978-0201325713
+</p>
+
+<p>
+A lot of designing a cloud application is simply about making conscious software architecture decisions, so any generic software architecture book would help here.
+</p>
+
+<p>
+I still like this book even if it has a few years under the belt by now and may be difficult to get your hands on. The reason for this is that it is one of the few software architecture books I have seen that almost solely focus on the &lt;I&gt;architecture decisions&lt;/I&gt;, and present a methodology that allows you to identify the need for architecture decisions, take the decisions, and implement the decisions in different viewpoints &#x2013; all while retaining traceability back to the source.
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IBass.jpg" alt="IBass.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+L. Bass el al., <i>Software Architecture in Practice</i>, Addison-Wesley, 2012. ISBN-10: 0321815734 | ISBN-13: 978-0321815736
+</p>
+
+<p>
+Also a general-purpose software architecture book. I find this book to be less hands on with a design methodology and more shoot-from-the-hip, but there is a large section on &lt;I&gt;architecture tactics&lt;/I&gt;, i.e. solutions and structures that address different quality concerns. These are, I find, a great inspiration for the architectural decisions (and thus fits nicely in with Hofmeister et al).
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IArundel.jpg" alt="IArundel.jpg" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+J. Arundel, <i>Puppet 3: Beginner&rsquo;s Guide</i>, Packt Publishing, 2013. ISBN-10: 1782161252 | ISBN-13: 978-1782161257
+</p>
+
+<p>
+To dig deeper into Puppet and how to use it to create an enterprise deployment environment, you should look into a book on Puppet. Any book on Puppet would work. I have read a couple and they seem to follow more or less the same format. Arundel is a good enough pick.
+</p>
+<br/><br/>
+
+
+<div class="figure">
+<p><img src="./images/IYourbook.png" alt="IYourbook.png" width="100" style="float:left;margin-right:1em;" />
+</p>
+</div>
+
+<p>
+<i>Your Book</i>
+</p>
+
+<p>
+If you find a book that you think should be included here, please send me an e-mail, and tell me about the book and why it should be included.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Get Started With AdobeConnect</h3>
+<div class="outline-text-3" id="text-5-4">
+</div><div id="outline-container-sec-5-4-1" class="outline-4">
+<h4 id="sec-5-4-1"><span class="section-number-4">5.4.1</span> Equipment and Tutorials</h4>
+<div class="outline-text-4" id="text-5-4-1">
+<ul class="org-ul">
+<li>Get a decent headset. We recommend that you make sure that you have a decent headset with microphone (for example, the USB headset Logitech H390, or equivalent from any other brand). The sound quality in your mobile phone headsets is usually not sufficient.
+</li>
+<li>Go through the <a href="https://studentportal.bth.se/web/studentportal.nsf/web.xsp/adobe_connect">Adobe Connect Tutorials</a>.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-4-2" class="outline-4">
+<h4 id="sec-5-4-2"><span class="section-number-4">5.4.2</span> Test</h4>
+<div class="outline-text-4" id="text-5-4-2">
+<p>
+The course has a dedicated Adobe Connect meeting room that is always open and available for you to use &#x2013; for example for collaborating with other students in the course. At certain regular times (to be announced later) teachers in the course are also online here for discussions.
+</p>
+
+<p>
+Because of reasons, we do not publish the address to the meeting room here. Instead, you will find it on It&rsquo;s Learning.
+</p>
+
+<p>
+Once you are &ldquo;in&rdquo;, there is an audio setup guide that you should go through the first time you visit.
+</p>
+
+<p>
+Experience tells us that the first times you connect there will be various problems before you have the audio working. Expect this, and plan accordingly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-4-3" class="outline-4">
+<h4 id="sec-5-4-3"><span class="section-number-4">5.4.3</span> Known problems</h4>
+<div class="outline-text-4" id="text-5-4-3">
+<ul class="org-ul">
+<li>On OSX, the right audio source/destination need to be selected <b>before</b> you connect to the Adobe Conenct meeting room. Alt-click on the speaker-icon in the menu bar to check this.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> Create a Sprint Test Plan</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+Create a document with the following sections:
+</p>
+<ul class="org-ul">
+<li><i>Test Items.</i> These are the assignments you are expected to submit for marking. It will probably be a good idea if you are able to tag them with the corresponding sprint, so that you can easily find them.
+</li>
+<li><i>Features to be Tested.</i> These are the user stories at the top of every sprint. Describe each of these features in terms of the object oriented modelling concepts or software development concepts that you need to master before you can satisfy the user story.
+</li>
+<li><i>Approach.</i> Here, you will describe <i>your</i> strategy for ensuring that you have learnt the material in the sprint. How do you ensure that you are confident that the assignments you submit will pass with the grade you are aiming for?
+</li>
+<li><i>Item Pass/Fail Criteria.</i> What do you have to be able to show to yourself to ensure that you have learnt the material in the sprint? What do you have to show in the submitted assignments?
+</li>
+<li><i>Schedule.</i> When do you plan on passing each test item and feature?
+</li>
+<li><i>Planning Risks and Contingencies.</i> Are there any foreseeable risks that may limit your ability to pass the course on time? What is your contingency plan?
+</li>
+<li><i>Glossary.</i> In this section you will build up a glossary of important terms in the course that you can use when studying. we suggest you collaborate with the rest of the class in the course discussion forum (on It&rsquo;s Learning) and post your terms and definitions there so that they can be discussed.
+</li>
+</ul>
+
+<p>
+In this sprint, the following items can be added already (you may think of more items, please add them too):
+</p>
+
+<ul class="org-ul">
+<li>Test Items
+</li>
+<li>Approach
+<ul class="org-ul">
+<li>Outline your plan for reading the course books and doing the sprints in time.
+</li>
+<li>Describe your plan for interacting with the other students in the course.
+</li>
+</ul>
+</li>
+<li>Item Pass/Fail Criteria
+<ul class="org-ul">
+<li>Outline your ambition level; what grade are you aiming for?
+</li>
+</ul>
+</li>
+<li>Planning Risks and Contingencies
+<ul class="org-ul">
+<li>Do you plan on taking any vacations (e.g., skiing trip, easter, ascension day, etc.)? When will you study more to compensate for this? Are your study-mates informed and ok with that you contribute less during these vacations?
+</li>
+<li>What is the expected workload for activities and work you are doing in parallel to this course? Does your plan for <i>this</i> course accomodate your plans for these other activities?
+</li>
+<li>Do you have time available if you are asked to complete your submitted assignments with more information?
+</li>
+<li>Are there any other risks you see at this stage?
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> Update Course Backlog</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+Where do you go from here? Are there any questions already now that you want answered? Add them, along with a brief strategy for how to find an answer.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Sprint Acceptance Tests</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+You are done with this sprint when:
+</p>
+<ul class="org-ul">
+<li>You have bought the literature you want/need for the course.
+</li>
+<li>You have read the Learning Materials
+</li>
+<li>You have logged in to It&rsquo;s Learning
+</li>
+<li>You have acquired the necessary equipment and tested AdobeConnect
+</li>
+<li>You have logged in to It&rsquo;s learning and set up forwarding to your e-mail address
+</li>
+<li><img src="./org/Checked.png" alt="Checked.png" /> You have posted an introduction about yourself in the course discussion forum
+</li>
+</ul>
+
+<p>
+You may also have
+</p>
+<ul class="org-ul">
+<li>Created a Sprint Test Plan
+</li>
+<li>Created a Course Backlog
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016-08-18</p>
+<p class="author">Author: Mikael Svahnberg</p>
+<p class="email">Email: <a href="mailto:Mikael.Svahnberg@bth.se">Mikael.Svahnberg@bth.se</a></p>
+<p class="date">Created: 2016-09-09 Fri 11:30</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.50.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

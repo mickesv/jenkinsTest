@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Sprint: Getting Started with Virtualisation</title>
+<!-- 2016-09-09 Fri 11:30 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Mikael Svahnberg" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="org/org.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Sprint: Getting Started with Virtualisation</h1>
+<br/>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> About This Sprint</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This sprint introduces a tool for virtualisation (VirtualBox), and a layer on top of this tool that enables automation (Vagrant).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> User Stories covered in this Sprint</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>As a developer I want to have a machine configuration locally accessible which is configured as closely as possible as the production environment so that I can test and mess up locally.
+</li>
+<li>As a manager I want my developers to be able to test locally in a cheap way so that overall costs are kept down.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Learning Material</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Articles</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><a href="https://www.virtualbox.org/manual/ch01.html">Introduction to Virtualisation and VirtualBox</a>
+</li>
+<li><a href="https://www.vagrantup.com/docs/">Introduction to Vagrant</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Experiential Learning</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Install VirtualBox</h3>
+<div class="outline-text-3" id="text-4-1">
+<ol class="org-ol">
+<li>Download VirtualBox for your machine: <a href="https://www.virtualbox.org/wiki/Downloads">Download VirtualBox</a>
+</li>
+<li>Read more about installation details here: <a href="https://www.virtualbox.org/manual/ch02.html">VirtualBox User Manual, Chapter 2. Installation Details</a>
+</li>
+<li>Also download and install the <b>VirtualBox Extension Pack</b>
+</li>
+<li>Download <a href="http://www.ubuntu.com/download">Ubuntu</a>. Any version will do.
+</li>
+</ol>
+</div>
+<div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><span class="section-number-4">4.1.1</span> Create a Virtual Machine</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ol class="org-ol">
+<li>Start VirtualBox
+</li>
+<li>Create a new Virtual Machine
+
+
+<div class="figure">
+<p><img src="./images/IVbox_tb.png" alt="IVbox_tb.png" />
+</p>
+</div>
+</li>
+
+<li>Give it a name, and select Linux/Ubuntu (64 bit)
+
+
+<div class="figure">
+<p><img src="./images/IVbox_new.png" alt="IVbox_new.png" />
+</p>
+</div>
+</li>
+
+<li>Click through all the other options with <code>Continue</code> and <code>Create</code> (it alternates)
+</li>
+<li>Double click your newly created virtual machine. It will now ask you to select an install media.
+
+<p>
+Click on the folder, select your downloaded ubuntu image, and then click on <code>Start</code>
+</p>
+
+<p>
+You are now running the ubuntu installer in your virual machine. Install Ubuntu in your usual way.
+</p>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2"><span class="section-number-4">4.1.2</span> Start/Pause/Stop your Virtual Machine</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>Double-clicking on your VM in VirtualBox&rsquo; UI will start your machine.
+</li>
+<li>CLosing the window will prompt you whether you want to pause the VM, shutdown nicely, or pull the plug.
+
+
+<div class="figure">
+<p><img src="./images/IVbox_close.png" alt="IVbox_close.png" />
+</p>
+</div>
+</li>
+
+<li>The same options are also available by right-clicking your VM in the VirtualBox UI.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-1-3" class="outline-4">
+<h4 id="sec-4-1-3"><span class="section-number-4">4.1.3</span> Summary</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<p>
+You have now installed VirualBox. You have created a new virtual machine, and have installed ubuntu on it.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Install Vagrant</h3>
+<div class="outline-text-3" id="text-4-2">
+<ol class="org-ol">
+<li>Make sure you have already installed VirtualBox
+</li>
+<li>Download and install Vagrant for your machine: <a href="https://www.vagrantup.com/downloads.html">Download Vagrant</a>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> Create a new Vagrant Virtual Machine (Box)</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ol class="org-ol">
+<li>Create and enter a new directory, and then run <code>vagrant init hashicorp/precise64</code> to create a new configuration.
+
+<p>
+This will create a stub <code>Vagrantfile</code> which contains the configuration for your virtual box.
+</p>
+</li>
+
+<li>Start your virtual machine with <code>vagrant up</code> and log in to it with <code>vagrant ssh</code>.
+
+<p>
+This will download (if necessary) a virtualbox Ubuntu image, start it for you, and make it available so that you can ssh into it.
+</p>
+</li>
+
+<li>Browse around. Note that the directory <code>/vagrant</code> is the same as your starting directory on your host computer.
+</li>
+</ol>
+
+<p>
+<b>Summary of Commands:</b>
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">$ mkdir myVagrantTest &amp;&amp; cd myVagrantTest
+$ vagrant init hashicorp/precise64   
+$ vagrant up
+[Lots of text here, telling you what Vagrant is up to]
+$ vagrant ssh
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+New release '14.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Welcome to your Vagrant-built virtual machine.
+Last login: Fri Sep 14 06:22:31 2012 from 10.0.2.2
+vagrant@precise32:~$
+</pre>
+</div>
+
+
+<div class="note">
+<ul class="org-ul">
+<li>Exit your Vagrant Virtual Machine as usual: <code>exit</code>
+</li>
+<li>Remember to clean up after yourself: <code>vagrant destroy -f</code>
+</li>
+</ul>
+
+</div>
+
+<ul class="org-ul">
+<li>If you have VirtualBox running, you can see how machines are added and removed as a consequence of the <code>up</code> and <code>destroy</code> commands.
+</li>
+<li>To speed things up, you may wish to add a box (a virtual machine image) without attaching it to any particular configuration with <code>vagrant box add hashicorp/precise64</code>
+
+<p>
+This will download the image and store it for future use. There is a <a href="https://atlas.hashicorp.com/boxes/search">Catalogue</a> of available virtual machine images available for Vagrant.
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> Summary</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<p>
+You have now installed Vagrant. You have downloaded a virtual machine image, started it, and logged in to it. After looking around, you have destroyed your virtual machine, thus leaving a clean slate for the next time you bring the machine up again.
+</p>
+
+<p>
+Now would be a good idea to go back to the <a href="https://www.vagrantup.com/docs/">Vagrant Tutorial</a> and play around a bit more.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Update Sprint Test Plan</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Go through the user stories for this sprint and make sure you have a clear understanding of how to solve each of them.
+</p>
+
+<p>
+Revisit and update your risks and contingencies section.
+</p>
+
+<p>
+Add and/or revise the following items to your glossary:
+</p>
+<ul class="org-ul">
+<li>Host Operating System
+</li>
+<li>Guest Operating System
+</li>
+<li>Virtual Machine
+</li>
+</ul>
+
+<p>
+Make sure you understand what each item is, and how to use them either in isolation or together with the other concepts.    
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Update Course Backlog</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>What can you use your virtual machine for?
+</li>
+<li>Can you start up your VM automatically?
+</li>
+<li>Can you start up your VM <i>without</i> attaching a screen (and run it like a true server)?
+</li>
+<li>What if your desired environment consists of several machines?
+</li>
+<li>Can you install different software so that you may boot up specialised versions of your guest operating systems?
+
+<p>
+Where do you go from here? Are there any questions that you want answered? Add them, along with a brief strategy for how to find an answer.   
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Sprint Acceptance Tests</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+You are done with this sprint when you have:
+</p>
+<ul class="org-ul">
+<li>Read the tutorials about VirtualBox and Vagrant
+</li>
+<li>Installed VirtualBox
+</li>
+<li>Created a virtual machine in VirtualBox
+</li>
+<li>Installed an operating system on your virtual machine
+</li>
+<li>Installed Vagrant
+</li>
+<li>Created a Vagrant Box and logged in to it
+</li>
+<li>Destroyed your started instance of a Vagrant Box
+</li>
+</ul>
+
+<p>
+You may also have:
+</p>
+<ul class="org-ul">
+<li>Updated your Sprint Test Plan
+</li>
+<li>Updated your Course Backlog
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016-09-06</p>
+<p class="author">Author: Mikael Svahnberg</p>
+<p class="email">Email: <a href="mailto:Mikael.Svahnberg@bth.se">Mikael.Svahnberg@bth.se</a></p>
+<p class="date">Created: 2016-09-09 Fri 11:30</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.50.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

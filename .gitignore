@@ -38,3 +38,4 @@ install_manifest.txt
 CTestTestfile.cmake
 Testing
 /tst1
+.vagrant

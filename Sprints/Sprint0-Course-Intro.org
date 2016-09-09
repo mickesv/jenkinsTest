@@ -1,0 +1,272 @@
+#+Title: Sprint 0: Course Introduction
+#+Subtitle: PROMPT Cloud and Big Data
+#+Author: Mikael Svahnberg
+#+Email: Mikael.Svahnberg@bth.se
+#+Date: 2016-08-18
+#+EPRESENT_FRAME_LEVEL: 1
+#+OPTIONS: email:t <:t todo:t f:t ':t toc:nil
+# #+STARTUP: showall
+#+STARTUP: beamer
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org/org.css" />
+#+HTML: <br/>
+
+#+MACRO: online We are available online twice per week via Adobe Connect.
+#+MACRO: sprintsize roughly 20 hours (this amounts to 2 weeks at 1/4 of full time study pace)
+#+MACRO: studypace an average of 10 hours each week
+
+* About This Sprint
+  This sprint introduces the course and the course structure.
+* User Stories covered in this Sprint
+  - As a student I want to pass this course.
+  - As a student I want to understand how this course is structured so that I can quickly find the information I need to learn the subject.
+  - As a student I want to know why this topic is important so that I can be properly motivated.
+* Introduction
+   Welcome to the course!
+
+   Of course you want to pass the course, and we want you to too. This document is intended to give an overview of how the course is structured, and give you a "map" of sorts to the rest of the course material. It is my hope that this will help you find the material you want easily so that you can focus on learning each part of the course.
+
+   The course is divided into a series of /Sprints/, that is, short iterations that focus on a small number of issues per sprint. We have borrowed this term from the agile development methodology [[https://en.wikipedia.org/wiki/Scrum_(software_development)][Scrum]].
+
+   Speaking of agile, there are a few other things we have borrowed from there as well. The /User Stories/ that each sprint document starts with is one such thing. A user story is a sort of stylised requirement, and we use them to set you into the right frame of mind for each sprint. As you notice, the user story contains information about which /perspective/ you should have, the /goals/ you should achieve, and a brief explanation of /why/ this goal is important.
+
+   Related to this is the /Sprint Acceptance Tests/ that you find at the bottom of each sprint document. These acceptance tests tell you how we plan on ensuring that the goal of the sprint has been reached.
+
+   The bulk of the sprint consists of /Learning Material/, and /Experiential Learning/. Learning material are book chapters, videos, blog posts, etc. that you can use to learn more about the topic in the sprint. Experiential Learning (which is not a good name, but we can't think of any better) consists of different activities you should /do/ as part of the sprint. Some of these activities are just practice activities. Others are activities that will help you organise the material better. Others again are those activities that we (as teachers) would like to look at to assess your progress. Let me repeat this:
+
+#+BEGIN_note
+Experiential Learning are things you are supposed to /do/, and includes:
+ - Things you do for practice
+ - Things you do to organise the material
+ - Things you submit as assignments to the teachers for marking
+#+END_note
+
+   Some activities are started during this sprint, and then we ask you to revisit them during every subsequent sprint. The idea with these activities are to help you structure your learning, and give you a means to follow your own progress.
+
+   So, without further ado, let's get started with the learning material. /Good Luck!/
+* Learning Material
+** Course Structure
+   The online presence of this course consists of these pages, and is organised as a set of sprints, where each sprint focus on a small topic and a few user stories. In each sprint there are things to read and watch, as well as activities to do. The result of some of those activities will be submitted as assignments for marking.
+
+   {{{online}}} We welcome communication via e-mail, It's Learning, and phone.
+** A Note on the Three-Week Roll Call
+   We are mandated to have a roll call in all our courses three weeks after the course starts, because of how the government pays us based on student registrations and student completions of a course. This roll call is a simple show of hands to count how many are actually active in the course. If you do not participate in the roll call, you are considered inactive, and will be deregistered from the course.
+
+   For this course we use the "[[Post on Discussion Board][Post on Discussion Board]]" experiential learning (below) as input to the three week roll call. /It is therefore vital that you post the introduction about yourself on the course discussion board within the first three weeks of the course!/. 
+** Assignment Submission
+   Read and understand the following
+*** Assignment Submission and Dates
+- The course is offered during two study periods (1 semester)
+- During this time, you are expected complete all assignments and submit them for marking.
+- Based on the marking, you *may* need to complement your submissions with additional material.
+- Complementing assignments can be done during the semester, within four weeks of the end of the semester, or in August.
+- Complementing assignments after the semester is only allowed if your original submissions were made during the semester and were non-trivial.
+- An assignment may only be complemented twice.
+- Given these constraints, you are free to plan your submissions as you see fit.
+*** Submissions
+    Assignment submissions are done via e-mail as a written report or a well-annotated set of presentation slides, unless otherwhise stated.
+*** Resubmissions
+In a resubmission, please:
+
+- highlight changes you have made!
+- discuss, where applicable, the changes you make
+*** A Note On Confidentiality
+You will submit your assignments to the course managers, and we will review them in order to give you feedback and to examine you on the course. You may also form study teams to review each other’s work. Apart from this, no-one else will see your assignments unless you decide to show them.
+
+There are ways to make sensitive information less sensitive. Some generic advice is to:
+- Describe the types of stakeholders involved rather than the specific roles.
+- Report numbers as percent of a total instead of the absolute numbers (for example, a process step may take x days or y% of the entire process), or express time in some generic "time unit" measure.
+- If the motivations for your choices are sensitive, then keep them in a separate document that you can share with the course managers, and share a less sensitive version with your study team.
+** A Note on Reading Research Articles
+   This course may suggest research articles for you to read. This may seem a daunting task for you, but there are some general guidelines that may help you:
+
+   - Start by reading the abstract and the conclusions. These will tell you what problem or area the article is addressing, and what the article contributed to solving the problem.
+   - The articles in this course have -- to a large extent -- been chosen because they summarise the topics in various ways. To find these summaries, look for /lists, figures, and tables/ in the article. Read these. Read the text around them, or where the figures and tables were referenced, in order to get an explanation of how to interpret them.
+
+   Generally, interpret each section of an article as follows:
+   - The /introduction/ section in an article puts the problem into context, and might give you clues as to how other researchers have solved it before. You can use this section to get a generic overview.
+   - The /related work/ section should discuss in further detail what other researchers have done that is similar to, or relates to, the article you are reading. This may give you an idea of how others have addressed the problem, and may give you pointers to other articles that you would wish to read.
+   - The /methodology/ section explains /how/ the study was conducted. Once an article is published (which they naturally are in this course), this is mostly interesting if you distrust some of the results and want to see if anything has been missed when constructing the study.
+   - The /execution/ and /results/ sections describe how the study was executed (in particular discrepancies from the planned methodology), and what the raw results were. Most of the time, you can safely skip these sections.
+   - The /analysis/ section "bakes" the results and tries to answer the research questions (address the identified problem). This is probably the most interesting section for you to read.
+   - The /discussion/ section should raise the view and try to see what the results actually mean in a bigger context. What can you do with the results? "So what?". This is a tricky section to read, since the authors want you to believe that their results are the best thing invented since hot porridge, but at the same time they have to identify threats to the validity of the study. /Validity threats/ are things that could have influenced the results instead of the sought after effect. This may be things that happened at the same time, inadequacies in the researchers skills and abilities, or inadequacies in the research design. Please remember, when (or if) reading this section, that most of the identified validity threats are minor obstacles (or the article would not have been published) that may impact the /scientific/ view of the results more than the practical significance or usefulness of them.
+   - The /references/ may give you ideas for other articles that you would like to read.
+
+   The bottom line is that when being told to read a lot of research articles, the trick is to learn how to /not/ read them while still getting the gist of them. Hopefully, the "map" described above may provide some help in identifying the parts of an article that are important for you.
+** A Further Note on the Recommended Study Pace
+   Each sprint in this course is estimated to take {{{sprintsize}}}. You may plan this as you see fit, but ultimately you need to spend {{{studypace}}} to be able to complete the course within the planned semester.
+  
+   We know that once the initial rush has settled after a couple of weeks it is tempting to put the course on the back burner and get on with your life, your family, and your work. /Please don't!/ It is /much/ harder to come back to the course later, and the required effort does not get smaller over time -- it merely piles up.
+
+   Instead, we recommend that you schedule time every week to work on the course.
+
+   Some other advice:
+   - Try to set aside larger continuous blocks of time since it is easier to become engrossed thusly (cf. "Ställtid", that Bodil Jönsson [[http://www.adlibris.com/se/bok/tio-tankar-om-tid-9789176088944][writes about]]).
+   - If you are able to commute to work by bus or train, this is an excellent time to read the research articles -- maybe you can temporarily switch to bus or train?
+   - Talk to your boss. Discuss the assignments with them. Can you tweak the assignments so they become more useful for your company, and can you then get a few hours per week to work on them during office hours?
+** TODO Course Goals						   :noexport:
+** TODO Why is this course Important?				   :noexport:
+** TODO Course Roadmap						   :noexport:
+** What should we do with the Sprint Test Plan?
+   The Sprint Test Plan is a way to get an overview of your expectations in the course, in relation to the provided material, and align it with my expectations as course responsible and examiner. In some sense, it is also your strategy for learning the topics. We will not mark your Sprint Test Plan -- you are creating and maintaining this for your own sake.
+
+   The Sprint Test Plan will be revisited during every sprint, so that you have an updated record of what you need to learn to pass the course.
+
+   We are loosely basing my suggestion for the Sprint Test Plan document on the IEEE 829-2008 standard. Feel free to add other information to it if you think it is relevant.
+** What is this "Course Backlog" thing?
+   As you study, we expect that you will get more questions, or additional information sources (blog pages etc.) that you would like to read, and we hope you will also get ideas for places where you would like to test what you have learnt. Put these into a course backlog document (it will help if you put them in a roughly prioritised order), and then spend time during each sprint to resolve your backlog items.
+
+   At the end of the course, it is our hope that your backlog contains pointers to yourself with how you should go forward with the knowledge gained. For example, are there any particularly interesting things you have found that you would like to study more? Are there any courses you are interested in taking as a consequence of taking this course? Are there any practices that you would like to introduce into your organisation? How?
+
+   Order the items in your Agile/Lean backlog according to your needs and priorities. 
+
+   The course backlog is revisited in every sprint. we will not mark it; you create it for your own benefit.
+* Experiential Learning
+** Create Infrastructure					   :noexport:
+   *Introduction.* In your future career you are going to use configuration management systems such as [[http://svnbook.red-bean.com/][Subversion]] or [[https://git-scm.com/][Git]], so why not start already now? This gives you an easy way to share work between your colleagues, and opens up for me to review your work even before you have submitted it.
+
+   If you also write your documents in for example [[https://daringfireball.net/projects/markdown/][Markdown]], they are formatted for you by github. Myself, I am partial to [[http://orgmode.org/][Org-mode]] and [[https://www.gnu.org/software/emacs/][Emacs]], especially because of the nice integration with [[http://plantuml.com/][PlantUML]] for generating design diagrams and the excellent export facilities. Org-mode is also nicely supported by github.
+
+   *Things to do:*
+   - [[https://education.github.com/][Create an account on Github]] (or use your existing one)
+   - Create a Project for the course =OOD-<course code>-<your name>=
+   - Invite me ([[https://github.com/mickesv][mickesv]]) to the project
+   - checkout your project and create a directory structure:
+     - =/Assignments/=
+     - =/SprintTestPlan/=
+     - =/CourseBacklog/=
+   - add a file to each directory, otherwise you will not be able to commit them. For example, add an empty =.gitignore= file to each directory.
+   - commit and push
+** Log in to It's Learning
+Log in to the university's course management system, [[https://bth.itslearning.com][It's Learning]], and make sure you can access the course.
+
+Click on your name in the top right corner and select "Your settings": [[./images/IItsProfile.png]]
+
+Configure the alerts and the message settings so that you get e-mails whenever we publish anything new info about the course.
+
+[[./images/IItsMessageSettings.png]]
+
+
+*Please Note:* You need to go in to /Message Settings/ and make sure that the e-mail address is properly configured, /and/ go in to /Alerts/ to activate your notifications. Under /Alerts/ you need to /Activate/ e-mail notifications /and/ select which of "new assignments, news (main dashboard), and your subscriptons (main dashboard)" you want alerts about. Initially, we recommend that you check all of them. If you get too much information, you can always go back and uncheck items later.
+** Post on Discussion Board
+Join the Course Discussion Board (on It's Learning) and post a short introductory paragraph about yourself. This provides info to your fellow students, and also verifies that you have joined the discussion group and can post to it.
+** TODO Buy Course Books
+*** Official Course Books
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IRosenberg.jpg]]
+
+J. Rosenberg, A. Mateos, /The Cloud at your Service/, Manning, 2010. ISBN-10: 1935182528 | ISBN-13: 978-1935182528
+
+A fairly ok all-purpose book. A bit management-heavy, but it is surprisingly difficult to find books about cloud computing that focus on the technical construction of a cloud application. Chapters 4 and onwards become more technical.
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IReese.jpg]]
+
+G. Reese /Cloud Application Architectures/, O’Reilly, 2009. ISBN-10: 0596156367 | ISBN-13: 978-0596156367
+
+On a higher level; it does not go into detail in the same way about how you would design your software architecture, but does go through some of the technical challenges with a cloud solution. Also has some nice writeups of the motions you need to go through in order to get a virtual machine up and running on different cloud providers.
+#+HTML: <br/><br/>
+
+*** Additional Books
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IWilder.jpg]]
+
+B. Wilder, /Cloud Architecture Patterns/, O'Reilly, 2012. ISBN-10: 1449319777 | ISBN-13: 978-1449319779
+
+Contains a number of design and architecture patterns that addresses different challenges in cloud applications. Has a running example using [[http://azure.microsoft.com/][Microsoft Azure]].
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IFowler.jpg]]
+
+M. Fowler, /Patterns of Enterprise Application Architecture/, Addison-Wesley, 2002. ISBN-10: 0321127420 | ISBN-13: 978-0321127426
+
+A large collection of design patterns specifically designed for the type of large scale applications that you would expect in a cloud environment.
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IHofmeister.jpg]]
+
+C. Hofmeister et al., /Applied Software Architecture/, Addison-Wesley, 1999. ISBN-10: 0201325713 | ISBN-13: 978-0201325713
+
+A lot of designing a cloud application is simply about making conscious software architecture decisions, so any generic software architecture book would help here.
+
+I still like this book even if it has a few years under the belt by now and may be difficult to get your hands on. The reason for this is that it is one of the few software architecture books I have seen that almost solely focus on the <I>architecture decisions</I>, and present a methodology that allows you to identify the need for architecture decisions, take the decisions, and implement the decisions in different viewpoints -- all while retaining traceability back to the source.
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IBass.jpg]]
+
+L. Bass el al., /Software Architecture in Practice/, Addison-Wesley, 2012. ISBN-10: 0321815734 | ISBN-13: 978-0321815736
+
+Also a general-purpose software architecture book. I find this book to be less hands on with a design methodology and more shoot-from-the-hip, but there is a large section on <I>architecture tactics</I>, i.e. solutions and structures that address different quality concerns. These are, I find, a great inspiration for the architectural decisions (and thus fits nicely in with Hofmeister et al).
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IArundel.jpg]]
+
+J. Arundel, /Puppet 3: Beginner's Guide/, Packt Publishing, 2013. ISBN-10: 1782161252 | ISBN-13: 978-1782161257
+
+To dig deeper into Puppet and how to use it to create an enterprise deployment environment, you should look into a book on Puppet. Any book on Puppet would work. I have read a couple and they seem to follow more or less the same format. Arundel is a good enough pick.
+#+HTML: <br/><br/>
+
+#+ATTR_HTML: :width 100 :style float:left;margin-right:1em;
+[[./images/IYourbook.png]]
+
+/Your Book/
+
+If you find a book that you think should be included here, please send me an e-mail, and tell me about the book and why it should be included.
+** Get Started With AdobeConnect
+*** Equipment and Tutorials
+- Get a decent headset. We recommend that you make sure that you have a decent headset with microphone (for example, the USB headset Logitech H390, or equivalent from any other brand). The sound quality in your mobile phone headsets is usually not sufficient.
+- Go through the [[https://studentportal.bth.se/web/studentportal.nsf/web.xsp/adobe_connect][Adobe Connect Tutorials]].
+*** Test
+The course has a dedicated Adobe Connect meeting room that is always open and available for you to use -- for example for collaborating with other students in the course. At certain regular times (to be announced later) teachers in the course are also online here for discussions.
+
+Because of reasons, we do not publish the address to the meeting room here. Instead, you will find it on It's Learning.
+
+Once you are "in", there is an audio setup guide that you should go through the first time you visit.
+
+Experience tells us that the first times you connect there will be various problems before you have the audio working. Expect this, and plan accordingly.
+
+*** Known problems
+- On OSX, the right audio source/destination need to be selected *before* you connect to the Adobe Conenct meeting room. Alt-click on the speaker-icon in the menu bar to check this.
+
+** Create a Sprint Test Plan
+   Create a document with the following sections:
+   - /Test Items./ These are the assignments you are expected to submit for marking. It will probably be a good idea if you are able to tag them with the corresponding sprint, so that you can easily find them.
+   - /Features to be Tested./ These are the user stories at the top of every sprint. Describe each of these features in terms of the object oriented modelling concepts or software development concepts that you need to master before you can satisfy the user story.
+   - /Approach./ Here, you will describe /your/ strategy for ensuring that you have learnt the material in the sprint. How do you ensure that you are confident that the assignments you submit will pass with the grade you are aiming for?
+   - /Item Pass/Fail Criteria./ What do you have to be able to show to yourself to ensure that you have learnt the material in the sprint? What do you have to show in the submitted assignments?
+   - /Schedule./ When do you plan on passing each test item and feature?
+   - /Planning Risks and Contingencies./ Are there any foreseeable risks that may limit your ability to pass the course on time? What is your contingency plan?
+   - /Glossary./ In this section you will build up a glossary of important terms in the course that you can use when studying. we suggest you collaborate with the rest of the class in the course discussion forum (on It's Learning) and post your terms and definitions there so that they can be discussed.
+
+   In this sprint, the following items can be added already (you may think of more items, please add them too):
+
+   - Test Items
+   - Approach
+     - Outline your plan for reading the course books and doing the sprints in time.
+     - Describe your plan for interacting with the other students in the course.
+   - Item Pass/Fail Criteria
+     - Outline your ambition level; what grade are you aiming for?
+   - Planning Risks and Contingencies
+     - Do you plan on taking any vacations (e.g., skiing trip, easter, ascension day, etc.)? When will you study more to compensate for this? Are your study-mates informed and ok with that you contribute less during these vacations?
+     - What is the expected workload for activities and work you are doing in parallel to this course? Does your plan for /this/ course accomodate your plans for these other activities?
+     - Do you have time available if you are asked to complete your submitted assignments with more information?
+     - Are there any other risks you see at this stage?
+** Update Course Backlog
+   Where do you go from here? Are there any questions already now that you want answered? Add them, along with a brief strategy for how to find an answer.
+* Sprint Acceptance Tests
+  You are done with this sprint when:
+  - You have bought the literature you want/need for the course.
+  - You have read the Learning Materials
+  - You have logged in to It's Learning
+  - You have acquired the necessary equipment and tested AdobeConnect
+  - You have logged in to It's learning and set up forwarding to your e-mail address
+  - [[./org/Checked.png]] You have posted an introduction about yourself in the course discussion forum
+
+  You may also have
+  - Created a Sprint Test Plan
+  - Created a Course Backlog

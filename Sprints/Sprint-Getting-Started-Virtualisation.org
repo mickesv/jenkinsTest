@@ -1,0 +1,140 @@
+#+Title: Sprint: Getting Started with Virtualisation
+#+Subtitle: PROMPT Cloud and Big Data
+#+Author: Mikael Svahnberg
+#+Email: Mikael.Svahnberg@bth.se
+#+Date: 2016-09-06
+#+EPRESENT_FRAME_LEVEL: 1
+#+OPTIONS: email:t <:t todo:t f:t ':t toc:nil
+# #+STARTUP: showall
+#+STARTUP: beamer
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org/org.css" />
+#+HTML: <br/>
+
+* About This Sprint
+  This sprint introduces a tool for virtualisation (VirtualBox), and a layer on top of this tool that enables automation (Vagrant).
+* User Stories covered in this Sprint
+  - As a developer I want to have a machine configuration locally accessible which is configured as closely as possible as the production environment so that I can test and mess up locally.
+  - As a manager I want my developers to be able to test locally in a cheap way so that overall costs are kept down.
+* TODO Introduction						   :noexport:
+* Learning Material
+** TODO Book Chapters						   :noexport:
+** TODO Screencasts						   :noexport:
+** TODO Lectures						   :noexport:
+** Articles
+   - [[https://www.virtualbox.org/manual/ch01.html][Introduction to Virtualisation and VirtualBox]]
+   - [[https://www.vagrantup.com/docs/][Introduction to Vagrant]]
+** Further Reading						   :noexport:
+* Experiential Learning
+** Install VirtualBox
+1. Download VirtualBox for your machine: [[https://www.virtualbox.org/wiki/Downloads][Download VirtualBox]]
+2. Read more about installation details here: [[https://www.virtualbox.org/manual/ch02.html][VirtualBox User Manual, Chapter 2. Installation Details]]
+3. Also download and install the *VirtualBox Extension Pack*
+4. Download [[http://www.ubuntu.com/download][Ubuntu]]. Any version will do.
+*** Create a Virtual Machine
+1. Start VirtualBox
+2. Create a new Virtual Machine
+
+   [[./images/IVbox_tb.png]]
+
+3. Give it a name, and select Linux/Ubuntu (64 bit)
+
+   [[./images/IVbox_new.png]]
+
+4. Click through all the other options with ~Continue~ and ~Create~ (it alternates)
+5. Double click your newly created virtual machine. It will now ask you to select an install media.
+
+   Click on the folder, select your downloaded ubuntu image, and then click on ~Start~
+
+   You are now running the ubuntu installer in your virual machine. Install Ubuntu in your usual way.
+
+*** Start/Pause/Stop your Virtual Machine
+- Double-clicking on your VM in VirtualBox' UI will start your machine.
+- CLosing the window will prompt you whether you want to pause the VM, shutdown nicely, or pull the plug.
+
+  [[./images/IVbox_close.png]]
+
+- The same options are also available by right-clicking your VM in the VirtualBox UI.
+
+*** Summary
+You have now installed VirualBox. You have created a new virtual machine, and have installed ubuntu on it.
+** Install Vagrant
+1. Make sure you have already installed VirtualBox
+2. Download and install Vagrant for your machine: [[https://www.vagrantup.com/downloads.html][Download Vagrant]]
+
+*** Create a new Vagrant Virtual Machine (Box)
+1. Create and enter a new directory, and then run ~vagrant init hashicorp/precise64~ to create a new configuration.
+
+   This will create a stub ~Vagrantfile~ which contains the configuration for your virtual box.
+   
+2. Start your virtual machine with ~vagrant up~ and log in to it with ~vagrant ssh~.
+
+   This will download (if necessary) a virtualbox Ubuntu image, start it for you, and make it available so that you can ssh into it.
+
+3. Browse around. Note that the directory ~/vagrant~ is the same as your starting directory on your host computer.
+
+*Summary of Commands:*
+#+BEGIN_SRC bash
+$ mkdir myVagrantTest && cd myVagrantTest
+$ vagrant init hashicorp/precise64   
+$ vagrant up
+[Lots of text here, telling you what Vagrant is up to]
+$ vagrant ssh
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+New release '14.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Welcome to your Vagrant-built virtual machine.
+Last login: Fri Sep 14 06:22:31 2012 from 10.0.2.2
+vagrant@precise32:~$ 
+#+END_SRC
+
+
+#+BEGIN_note
+- Exit your Vagrant Virtual Machine as usual: ~exit~
+- Remember to clean up after yourself: ~vagrant destroy -f~
+#+END_note
+
+- If you have VirtualBox running, you can see how machines are added and removed as a consequence of the ~up~ and ~destroy~ commands.
+- To speed things up, you may wish to add a box (a virtual machine image) without attaching it to any particular configuration with ~vagrant box add hashicorp/precise64~
+
+   This will download the image and store it for future use. There is a [[https://atlas.hashicorp.com/boxes/search][Catalogue]] of available virtual machine images available for Vagrant.
+
+*** Summary
+You have now installed Vagrant. You have downloaded a virtual machine image, started it, and logged in to it. After looking around, you have destroyed your virtual machine, thus leaving a clean slate for the next time you bring the machine up again.
+
+Now would be a good idea to go back to the [[https://www.vagrantup.com/docs/][Vagrant Tutorial]] and play around a bit more.
+** Update Sprint Test Plan
+    Go through the user stories for this sprint and make sure you have a clear understanding of how to solve each of them.
+
+    Revisit and update your risks and contingencies section.
+
+    Add and/or revise the following items to your glossary:
+    - Host Operating System
+    - Guest Operating System
+    - Virtual Machine
+
+    Make sure you understand what each item is, and how to use them either in isolation or together with the other concepts.    
+** Update Course Backlog
+- What can you use your virtual machine for?
+- Can you start up your VM automatically?
+- Can you start up your VM /without/ attaching a screen (and run it like a true server)?
+- What if your desired environment consists of several machines?
+- Can you install different software so that you may boot up specialised versions of your guest operating systems?
+
+   Where do you go from here? Are there any questions that you want answered? Add them, along with a brief strategy for how to find an answer.   
+* Sprint Acceptance Tests
+  You are done with this sprint when you have:
+  - Read the tutorials about VirtualBox and Vagrant
+  - Installed VirtualBox
+  - Created a virtual machine in VirtualBox
+  - Installed an operating system on your virtual machine
+  - Installed Vagrant
+  - Created a Vagrant Box and logged in to it
+  - Destroyed your started instance of a Vagrant Box
+
+  You may also have:
+   - Updated your Sprint Test Plan
+   - Updated your Course Backlog
