@@ -1,5 +1,5 @@
 build:
-  image: ubuntu:latest
+  image: msv/emacs
   commands:
     - apt-get -qq update
     - apt-get -qy install software-properties-common
